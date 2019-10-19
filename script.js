@@ -1,5 +1,4 @@
 const tabs = document.querySelector(".tabs");
-const planets = document.getElementsByClassName("planets");
 const rooturl = "https://swapi.co/api/planets";
 const h1 = document.querySelector("h1");
 const button = document.querySelector("button");
@@ -8,6 +7,7 @@ const corsucant = document.querySelector("#corsucant");
 const hoth = document.querySelector("#hoth");
 const bespin = document.querySelector("#bespin");
 const kamino = document.querySelector("#kamino");
+const description = document.querySelector("p");
 
 alderaan.addEventListener("click", function (e){
 	e.preventDefault();
@@ -15,6 +15,7 @@ alderaan.addEventListener("click", function (e){
 		.then(res => res.json())
 		.then(res => {
 			console.log(res.results[0].name)
+			description.innerText = res.results[0].name;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -26,6 +27,7 @@ corsucant.addEventListener("click", function (e){
 		.then(res => res.json())
 		.then(res => {
 			console.log(res.results[7].name)
+			description.innerText = res.results[7].name;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -37,6 +39,7 @@ hoth.addEventListener("click", function (e){
 		.then(res => res.json())
 		.then(res => {
 			console.log(res.results[2].name)
+			description.innerText = res.results[2].name;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -48,6 +51,7 @@ bespin.addEventListener("click", function (e){
 		.then(res => res.json())
 		.then(res => {
 			console.log(res.results[4].name)
+			description.innerText = res.results[4].name;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -59,6 +63,7 @@ kamino.addEventListener("click", function (e){
 		.then(res => res.json())
 		.then(res => {
 			console.log(res.results[8].name)
+			description.innerText = res.results[8].name;
 		})
 		.catch(err=>{
 			console.log("try again!")
