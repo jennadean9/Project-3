@@ -8,12 +8,12 @@ function getInfo(e){
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
-			console.log(res.results[0]);
-			console.log(res.results[7]);
-			console.log(res.results[2]);
-			console.log(res.results[4]);
-			console.log(res.results[8]);
-			console.log(res.results[8].name);
+			// console.log(res.results[0]);
+			// console.log(res.results[7]);
+			// console.log(res.results[2]);
+			// console.log(res.results[4]);
+			// console.log(res.results[8]);
+			// console.log(res.results[8].name);
 			if (e.target.input = "Alderaan"){
 				console.log(res.result[0]);
 			}
@@ -29,10 +29,10 @@ function getInfo(e){
 			if (e.target.input = "Kamino"){
 				console.log(res.results[8])
 			}
-			for (i = 0; i < planets.length; i++){
-				console.log(res.result[i].name);
-				planets[i].addEventListener("click", getInfo)
-		}
+		// 	for (i = 0; i < planets.length; i++){
+		// 		console.log(res.result[i].name);
+		// 		planets[i].addEventListener("click", getInfo)
+		// }
 		})
 		.catch(err =>{
 			console.log("try again..")
@@ -40,13 +40,13 @@ function getInfo(e){
 		// .finally(res =>{
 		// 	console.log(res.result[i].name)
 		// })
-		
 }
 
-for(i = 0; i < planets.length; i++){
-	planets[i].addEventListener("click", getInfo)
-	console.log(planets[i].name);
-}
+
+// for(i = 0; i < planets.length; i++){
+// 	planets[i].addEventListener("click", getInfo)
+// 	console.log(planets[i].name);
+// }
 
 /*
 name: planet name
