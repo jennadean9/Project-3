@@ -1,0 +1,32 @@
+body{
+	background: black;
+}
+section{
+	font-family: "Russo One";
+	color: yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+h1{
+	font-size: 5em;
+	text-transform: uppercase;
+	
+}
+h2{
+	font-size: 2em;
+	text-align: center;
+}
+/* main{
+	height: ;
+	border: solid black 1px;
+} */
+input{
+	border: none;
+	font-size: 1.75em;
+	font-family: "Orbitron", Impact;
+	color: white;
+	font-weight: bolder;
+	background: black;
+}
