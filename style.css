@@ -1,5 +1,7 @@
 body{
 	background: black;
+	background: url("swbackground.jpg");
+	background-size: cover;
 }
 section{
 	font-family: "Russo One";
@@ -18,6 +20,12 @@ h2{
 	font-size: 2em;
 	text-align: center;
 }
+p{
+	color: white;
+	font-family: "Source Code Pro";
+	background-color: none;
+
+}
 /* main{
 	height: ;
 	border: solid black 1px;
@@ -28,8 +36,12 @@ button{
 	font-family: "Orbitron", Impact;
 	color: white;
 	font-weight: bolder;
-	background: black;
+	background: none;
 }
-p{
-	color: white;
+button:hover {
+	cursor: pointer;
+	background-color: goldenrod;
+	}
+button:focus {
+	outline:0;
 }
