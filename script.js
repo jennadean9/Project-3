@@ -19,7 +19,7 @@ const tabLinks = document.querySelector("#tab-links")
 // 				description.innerText = `Welcome to ${res.results[i].name}! 
 // 				${res.results[i].name} is ${res.results[i].diameter} kilometers in diameter, and has ${res.results[i].orbital_period} days in a year.
 // 				The planet ${res.results[i].name} is ${res.results[i].surface_water}% water, and the ${res.results[i].terrain} terrain populate ${res.results[i].population} beings.
-// 				Thanks for visiting!`;
+// 				Thanks for visiting and come back soon!`;
 // 			})
 // 			.catch(err=>{
 // 				console.log("try again!")
@@ -39,7 +39,7 @@ alderaan.addEventListener("click", function (e){
 			description.innerText = `Welcome to ${res.results[0].name}! 
 			${res.results[0].name} is ${res.results[0].diameter} kilometers in diameter, and has ${res.results[0].orbital_period} days in a year.
 			The planet ${res.results[0].name} is ${res.results[0].surface_water}% water, and the ${res.results[0].terrain} terrain populate ${res.results[0].population} beings.
-			Thanks for visiting!`;
+			Thanks for visiting and come back soon!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -56,7 +56,7 @@ coruscant.addEventListener("click", function (e){
 			description.innerText = `Welcome to ${res.results[7].name}! 
 			${res.results[7].name} is ${res.results[7].diameter} kilometers in diameter, and has ${res.results[7].orbital_period} days in a year.
 			The planet ${res.results[7].name} is ${res.results[7].surface_water}% water, and the ${res.results[7].terrain} of the planet populate ${res.results[7].population} beings.
-			Thanks for visiting!`;
+			Thanks for visiting and come back soon!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -73,7 +73,7 @@ hoth.addEventListener("click", function (e){
 			description.innerText = `Welcome to ${res.results[2].name}! 
 			${res.results[2].name} is ${res.results[2].diameter} kilometers in diameter, and has ${res.results[2].orbital_period} days in a year.
 			The planet ${res.results[2].name} is ${res.results[2].surface_water}% water, and the ${res.results[2].terrain} terrain populate ${res.results[2].population} beings.
-			Thanks for visiting!`;
+			Thanks for visiting and come back soon!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -90,7 +90,7 @@ bespin.addEventListener("click", function (e){
 			description.innerText = `Welcome to ${res.results[4].name}! 
 			${res.results[4].name} is ${res.results[4].diameter} kilometers in diameter, and has ${res.results[4].orbital_period} days in a year.
 			The planet ${res.results[4].name} is ${res.results[4].surface_water}% water, and the ${res.results[4].terrain} terrain populates ${res.results[4].population} beings.
-			Thanks for visiting!`;
+			Thanks for visiting and come back soon!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -107,7 +107,7 @@ kamino.addEventListener("click", function (e){
 			description.innerText = `Welcome to ${res.results[8].name}! 
 			${res.results[8].name} is ${res.results[8].diameter} kilometers in diameter, and has ${res.results[8].orbital_period} days in a year.
 			The planet ${res.results[8].name} is ${res.results[8].surface_water}% water, and the ${res.results[8].terrain} terrain populates ${res.results[8].population} beings.
-			Thanks for visiting!`;
+			Thanks for visiting and come back soon!`;
 		})
 		.catch(err=>{
 			console.log("try again!")

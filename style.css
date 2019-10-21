@@ -127,6 +127,7 @@ p{
 p:hover{
 	background: rgba(0, 0, 0, 0.7);
 	background-size:100%;
+	letter-spacing: 0.1em;
    	-webkit-transition: all 1s ease-in-out;
   	-moz-transition: all 1s ease-in-out;
   	-o-transition: all 1s ease-in-out;
