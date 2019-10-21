@@ -26,8 +26,8 @@ h1{
 	transition-property: transform;
 }
 h1:hover{
-	-webkit-transform: scale(1.5) rotate(3deg);
-	transform: scale(1.5) rotate(3deg);
+	-webkit-transform: scale(1.9) rotate(3deg);
+	transform: scale(1.9) rotate(3deg);
 }
 h2{
 	font-size: 2em;
@@ -74,8 +74,8 @@ button{
 button:hover {
 	cursor: pointer;
 	background-color: goldenrod!important;
-	-webkit-transform: scale(1.1);
- 	transform: scale(1.1);
+	-webkit-transform: scale(1.2);
+ 	transform: scale(1.2);
 	}
 button:focus {
 	outline:0;
@@ -117,10 +117,10 @@ p{
 	background: rgba(180, 180, 180, 0.5);
 	line-height: 1.5em;
 	background-size:100%;
-    -webkit-transition: all 1s ease-in-out;
-  	-moz-transition: all 1s ease-in-out;
- 	-o-transition: all 1s ease-in-out;
-  	transition: all 1s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+  	-moz-transition: all 0.6s ease-in-out;
+ 	-o-transition: all 0.6s ease-in-out;
+	  transition: all 0.6s ease-in-out;
    
 
 }
@@ -128,10 +128,10 @@ p:hover{
 	background: rgba(0, 0, 0, 0.7);
 	background-size:100%;
 	letter-spacing: 0.1em;
-   	-webkit-transition: all 1s ease-in-out;
-  	-moz-transition: all 1s ease-in-out;
-  	-o-transition: all 1s ease-in-out;
- 	transition: all 1s ease-in-out;
+   	-webkit-transition: all 0.6s ease-in-out;
+  	-moz-transition: all 0.6s ease-in-out;
+  	-o-transition: all 0.6s ease-in-out;
+ 	transition: all 0.6s ease-in-out;
 }
 footer{
 	display: flex;
