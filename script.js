@@ -1,26 +1,24 @@
 const body = document.querySelector("body");
 const rooturl = "https://swapi.co/api/planets";
-const alderaan = document.querySelector("#alderaan");
-const coruscant = document.querySelector("#coruscant");
-const hoth = document.querySelector("#hoth");
-const bespin = document.querySelector("#bespin");
-const kamino = document.querySelector("#kamino");
+const alderaan = document.querySelector(".alderaan");
+const coruscant = document.querySelector(".coruscant");
+const hoth = document.querySelector(".hoth");
+const bespin = document.querySelector(".bespin");
+const kamino = document.querySelector(".kamino");
 const description = document.querySelector("p");
-const bgalderaan = "url('alderaan.jpg') no-repeat center center fixed";
-const bgcoruscant = "url('coruscant.jpg')";
-const bghoth = "url('hoth.jpg') no-repeat center center fixed";
-const bgbespin = "url('bespin.jpg') no-repeat center center fixed";
-const bgkamino = "url('kamino.jpg') no-repeat center center fixed";
 
 alderaan.addEventListener("click", function (e){
 	e.preventDefault();
+	body.classList.add("ald");
+	body.classList.remove("h", "cor", "bes", "kam")
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
-			console.log(res.results[0].name)
-			console.log(res.results)
-			description.innerText = res.results[0].name;
-			body.style.background = bgalderaan;
+			console.log(res.results[0])
+			description.innerText = `Welcome to ${res.results[0].name}! 
+			${res.results[0].name} is ${res.results[0].diameter} kilometers in diameter, and has ${res.results[0].orbital_period} days in a year.
+			The planet ${res.results[0].name} is ${res.results[0].surface_water}% water, and the ${res.results[0].terrain} terrain populate ${res.results[0].population} beings.
+			Thanks for visiting!`;;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -28,12 +26,16 @@ alderaan.addEventListener("click", function (e){
 })
 coruscant.addEventListener("click", function (e){
 	e.preventDefault();
+	body.classList.add("cor");
+	body.classList.remove("h", "ald", "bes", "kam")
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
-			console.log(res.results[7].name)
-			description.innerText = res.results[7].name;
-			body.style.background = bgcoruscant;
+			console.log(res.results[7])
+			description.innerText = `Welcome to ${res.results[7].name}! 
+			${res.results[7].name} is ${res.results[7].diameter} kilometers in diameter, and has ${res.results[7].orbital_period} days in a year.
+			The planet ${res.results[7].name} is ${res.results[7].surface_water}% water, and the ${res.results[7].terrain} of the planet populate ${res.results[7].population} beings.
+			Thanks for visiting!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -41,12 +43,16 @@ coruscant.addEventListener("click", function (e){
 })
 hoth.addEventListener("click", function (e){
 	e.preventDefault();
+	body.classList.add("h");
+	body.classList.remove("ald", "cor", "bes", "kam")
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
-			console.log(res.results[2].name)
-			description.innerText = res.results[2].name;
-			body.style.background = bghoth;
+			console.log(res.results[2])
+			description.innerText = `Welcome to ${res.results[2].name}! 
+			${res.results[2].name} is ${res.results[2].diameter} kilometers in diameter, and has ${res.results[2].orbital_period} days in a year.
+			The planet ${res.results[2].name} is ${res.results[2].surface_water}% water, and the ${res.results[2].terrain} terrain populate ${res.results[2].population} beings.
+			Thanks for visiting!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -54,12 +60,16 @@ hoth.addEventListener("click", function (e){
 })
 bespin.addEventListener("click", function (e){
 	e.preventDefault();
+	body.classList.add("bes");
+	body.classList.remove("h", "cor", "ald", "kam")
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
-			console.log(res.results[4].name)
-			description.innerText = `This is ${res.results[4].name}`;
-			body.style.background = bgbespin;
+			console.log(res.results[4])
+			description.innerText = `Welcome to ${res.results[4].name}! 
+			${res.results[4].name} is ${res.results[4].diameter} kilometers in diameter, and has ${res.results[4].orbital_period} days in a year.
+			The planet ${res.results[4].name} is ${res.results[4].surface_water}% water, and the ${res.results[4].terrain} terrain populates ${res.results[4].population} beings.
+			Thanks for visiting!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
@@ -67,23 +77,18 @@ bespin.addEventListener("click", function (e){
 })
 kamino.addEventListener("click", function (e){
 	e.preventDefault();
+	body.classList.add("kam");
+	body.classList.remove("h", "cor", "bes", "ald")
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
-			console.log(res.results[8].name)
-			description.innerText = `This is ${res.results[8].name}`;
-			body.style.background = bgkamino;
+			console.log(res.results[8])
+			description.innerText = `Welcome to ${res.results[8].name}! 
+			${res.results[8].name} is ${res.results[8].diameter} kilometers in diameter, and has ${res.results[8].orbital_period} days in a year.
+			The planet ${res.results[8].name} is ${res.results[8].surface_water}% water, and the ${res.results[8].terrain} terrain populates ${res.results[8].population} beings.
+			Thanks for visiting!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
 		})
 })
-/*
-name: planet name
-diameter: in km
-orbital_period: number of days it takes to complete an orbit around its star
-gravity: in standard G
-population: population of sentinent beings
-terrain: description
-surface_water: percentage of the planet surgace that is naturally occurring water or bodies of water
-*/

@@ -1,6 +1,6 @@
 body{
 	background: black;
-	background: url("swbackground.jpg");
+	background: url("swbackground.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 section{
@@ -20,16 +20,18 @@ h2{
 	font-size: 2em;
 	text-align: center;
 }
-p{
-	color: white;
-	font-family: "Source Code Pro";
-	background-color: none;
-
+main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	padding: 1em;
 }
-/* main{
-	height: ;
-	border: solid black 1px;
-} */
+.tab{
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background: rgba(200, 200, 200, 0.5);
+}
 button{
 	border: none;
 	font-size: 1.75em;
@@ -37,11 +39,51 @@ button{
 	color: white;
 	font-weight: bolder;
 	background: none;
+	cursor: pointer;
+	transition: 0.3s;
 }
 button:hover {
 	cursor: pointer;
-	background-color: goldenrod;
+	background-color: goldenrod!important;
 	}
 button:focus {
 	outline:0;
+}
+.ald{
+	background: url("alderaan.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.cor{
+	background: url("coruscant.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.h{
+	background: url("hoth.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.bes{
+	background: url("bespin.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.kam{
+	background: url("kamino.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+p{
+	color: white;
+	font-family: "Big Shoulders Text";
+	background-color: none;
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 0.05em;
+	background: rgba(180, 180, 180, 0.5);
+	line-height: 1.5em;
+
 }
