@@ -32,7 +32,6 @@ alderaan.addEventListener("click", function (e){
 	e.preventDefault();
 	body.classList.add("ald");
 	body.classList.remove("h", "cor", "bes", "kam");
-	body.style.background.animation = "fadeIn 2s";
 	fetch(rooturl)
 		.then(res => res.json())
 		.then(res => {
