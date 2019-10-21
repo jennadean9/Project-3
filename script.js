@@ -6,6 +6,27 @@ const hoth = document.querySelector(".hoth");
 const bespin = document.querySelector(".bespin");
 const kamino = document.querySelector(".kamino");
 const description = document.querySelector("p");
+const tabLinks = document.querySelector("#tab-links")
+
+//code didn't work for one loop for all
+// tabLinks.addEventListener("click", function(e){
+// for(i = 0; i < tabLinks.length; i++){
+// 		e.preventDefault()
+// 		fetch(rooturl)
+// 			.then(res=> res.json())
+// 			.then(res=> {
+// 				console.log(res.results[i])
+// 				description.innerText = `Welcome to ${res.results[i].name}! 
+// 				${res.results[i].name} is ${res.results[i].diameter} kilometers in diameter, and has ${res.results[i].orbital_period} days in a year.
+// 				The planet ${res.results[i].name} is ${res.results[i].surface_water}% water, and the ${res.results[i].terrain} terrain populate ${res.results[i].population} beings.
+// 				Thanks for visiting!`;
+// 			})
+// 			.catch(err=>{
+// 				console.log("try again!")
+// 			})
+// 	}
+// })
+
 
 alderaan.addEventListener("click", function (e){
 	e.preventDefault();
@@ -18,7 +39,7 @@ alderaan.addEventListener("click", function (e){
 			description.innerText = `Welcome to ${res.results[0].name}! 
 			${res.results[0].name} is ${res.results[0].diameter} kilometers in diameter, and has ${res.results[0].orbital_period} days in a year.
 			The planet ${res.results[0].name} is ${res.results[0].surface_water}% water, and the ${res.results[0].terrain} terrain populate ${res.results[0].population} beings.
-			Thanks for visiting!`;;
+			Thanks for visiting!`;
 		})
 		.catch(err=>{
 			console.log("try again!")
