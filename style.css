@@ -85,5 +85,20 @@ p{
 	letter-spacing: 0.05em;
 	background: rgba(180, 180, 180, 0.5);
 	line-height: 1.5em;
-
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex end;
+	align-items: center;
+	color: yellow;
+	background: rgba(0, 0, 0, 0.7);
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	font-family: "Merriweather";
+	font-size: 0.8em;
 }
