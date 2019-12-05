@@ -1,148 +1,171 @@
-body{
-	background: black;
-	background: url("swbackground.jpg") no-repeat center center fixed;
-	background-size: cover;
+body {
+  background: black;
+  background: url("swbackground.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-section{
-	font-family: "Russo One";
-	color: yellow;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
+section {
+  font-family: "Russo One";
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-h1{
-	font-size: 5em;
-	text-transform: uppercase;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-transition-duration: 1s;
-	transition-duration: 1s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
-h1:hover{
-	-webkit-transform: scale(1.9) rotate(3deg);
-	transform: scale(1.9) rotate(3deg);
+h1:hover {
+  -webkit-transform: scale(1.9) rotate(3deg);
+  transform: scale(1.9) rotate(3deg);
 }
-h2{
-	font-size: 2em;
-	text-align: center;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease; 
+h2 {
+  font-size: 2em;
+  text-align: center;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
-h2:hover{
-	letter-spacing: 0.5em;
+h2:hover {
+  letter-spacing: 0.5em;
 }
-main{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-	padding: 1em;
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.tab{
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background: rgba(200, 200, 200, 0.5);
+.tab-container {
+  width: 80%;
+  height: 60%;
 }
-button{
-	border: none;
-	font-size: 1.75em;
-	font-family: "Orbitron", Impact;
-	color: white;
-	font-weight: bolder;
-	background: none;
-	cursor: pointer;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
+.description-container {
+  background: rgba(200, 200, 200, 0.5);
+  margin: 0;
+  height: 40%;
+  width: 99.9%;
+  border: solid white 1px;
+  border-top: none;
+}
+.tab {
+  overflow: hidden;
+  background: rgba(200, 200, 200, 0.5);
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
+  justify-content: center;
+}
+.pill {
+  border: solid white 1px;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+button {
+  border: none;
+  font-size: 1.75em;
+  font-family: "Orbitron", Impact;
+  font-weight: bolder;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  transition: ease all 0.3s;
+}
+.pill:hover {
+  cursor: pointer;
+  background-color: white;
+}
+button:focus {
+  outline: 0;
 }
 button:hover {
-	cursor: pointer;
-	background-color: goldenrod!important;
-	-webkit-transform: scale(1.2);
- 	transform: scale(1.2);
-	}
-button:focus {
-	outline:0;
+  color: goldenrod;
 }
-.ald{
-	background: url("alderaan.jpg") no-repeat center center fixed;
-	background-size: cover;
+.ald {
+  background: url("alderaan.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
-.cor{
-	background: url("coruscant.jpg") no-repeat center center fixed;
-	background-size: cover;
+.cor {
+  background: url("coruscant.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
-.h{
-	background: url("hoth.jpg") no-repeat center center fixed;
-	background-size: cover;
+.h {
+  background: url("hoth.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
-.bes{
-	background: url("bespin.jpg") no-repeat center center fixed;
-	background-size: cover;
+.bes {
+  background: url("bespin.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
-.kam{
-	background: url("kamino.jpg") no-repeat center center fixed;
-	background-size: cover;
+.kam {
+  background: url("kamino.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
-div{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-p{
-	color: white;
-	font-family: "Big Shoulders Text";
-	background-color: none;
-	text-align: center;
-	font-size: 2em;
-	letter-spacing: 0.05em;
-	background: rgba(180, 180, 180, 0.5);
-	line-height: 1.5em;
-	background-size:100%;
-    -webkit-transition: all 0.6s ease-in-out;
-  	-moz-transition: all 0.6s ease-in-out;
- 	-o-transition: all 0.6s ease-in-out;
-	  transition: all 0.6s ease-in-out;
-   
+.main-text {
+  margin-top: 0px;
+}
+p {
+  color: black;
+  font-family: "Big Shoulders Text";
+  background-color: none;
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  width: 100%;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex end;
+  align-items: center;
+  color: yellow;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: 0.8em;
 }
-p:hover{
-	background: rgba(0, 0, 0, 0.7);
-	background-size:100%;
-	letter-spacing: 0.1em;
-   	-webkit-transition: all 0.6s ease-in-out;
-  	-moz-transition: all 0.6s ease-in-out;
-  	-o-transition: all 0.6s ease-in-out;
- 	transition: all 0.6s ease-in-out;
-}
-footer{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex end;
-	align-items: center;
-	color: yellow;
-	background: rgba(0, 0, 0, 0.7);
-	margin: 0;
-	position: fixed;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	text-align: center;
-	font-family: "Merriweather";
-	font-size: 0.8em;
+.active {
+  transform: scale(1.1);
+  text-shadow: 1px 1px;
+  background-color: white;
+  color: black;
+  border-bottom: solid white 1px;
 }

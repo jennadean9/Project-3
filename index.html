@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron|Big+Shoulders+Text|Russo+One|Merriweather&display=swap" rel="stylesheet">
-</head>
-<body>
-	<section>
-		<h1>Star Wars</h1>
-		<h2>Featured Planets from a long, long time ago</h2>
-	</section>
-	<main class = "tab">
-			<button class= "alderaan" id = "tab-links">Alderaan
-			</button>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron|Big+Shoulders+Text|Russo+One|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <h1>Star Wars</h1>
+      <h2>Featured Planets from a long, long time ago</h2>
+    </section>
+    <div class="tab-container">
+      <ul class="tab">
+        <li class="pill">
+          <button id="alderaan" class="tab-links">Alderaan</button>
+        </li>
+        <li class="pill">
+          <button id="coruscant" class="tab-links">Coruscant</button>
+        </li>
+        <li class="pill"><button id="hoth" class="tab-links">Hoth</button></li>
+        <li class="pill">
+          <button id="bespin" class="tab-links">Bespin</button>
+        </li>
+        <li class="pill">
+          <button id="kamino" class="tab-links">Kamino</button>
+        </li>
+      </ul>
+      <div class="description-container">
+        <p class="main-text"></p>
+      </div>
+    </div>
+    <footer>Planetary facts provided by the Star Wars API (SWAPI).</footer>
 
-			<button class = "coruscant"id = "tab-links">Coruscant
-			</button>
-
-			<button class = "hoth" id = "tab-links">Hoth
-			</button>
-
-			<button class = "bespin" id = "tab-links">Bespin
-			</button>
-
-			<button class = "kamino" id = "tab-links">Kamino
-			</button>
-			
-	</main>
-	<div>
-		<p></p>
-	</div>
-	<footer>Planetary facts provided by the Star Wars API (SWAPI). </footer>
-
-
-<script type="text/javascript" src="script.js"></script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
-
